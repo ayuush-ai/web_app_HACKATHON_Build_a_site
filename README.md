@@ -66,9 +66,8 @@ A brief description of your website goes here. For example:
 
 We thank the following people for their contributions to this project:
 
-- **[Name 1]** - [GitHub Profile](https://github.com/name1)
-- **[Name 2]** - [GitHub Profile](https://github.com/name2)
-- **[Name 3]** - [GitHub Profile](https://github.com/name3)
+- **[Name]** - [ayuush-ai](https://github.com/ayuush-ai)
+
 
 Feel free to add your name if you contribute to this project during the Build-A-Site hackathon!
 
@@ -79,6 +78,6 @@ Feel free to add your name if you contribute to this project during the Build-A-
 For any inquiries or feedback, reach out to:
 
 - **Your Name**
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **GitHub**: [github.com/your-username](https://github.com/your-username)
+- **Email**: [pradhanayaskanta781@gmail.com](pradhanayaskanta781@gmail.com)
+- **GitHub**: [ayuush-ai](https://github.com/ayuush-ai)
 - **Website**: [your-website.com](https://your-website.com)
