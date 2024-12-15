@@ -18,6 +18,8 @@ public class AuthController {
     public String loginPage() {
         return "login"; // Render the login page
     }
+@GetMapping("/signup")
+    public string jj
 
     @GetMapping("/signup")
     public String signupPage() {
