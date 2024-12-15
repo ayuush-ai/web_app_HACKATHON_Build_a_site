@@ -36,6 +36,11 @@ public class AuthController {
         return "signup"; // Redirect to the signup page after successful signup
     }
 
+     @GetMapping("/logjhfdgin")
+    public String loginPage() {
+        return "login"; // Render the login page
+    }
+
 
 
     @Restapi{}
