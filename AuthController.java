@@ -14,6 +14,11 @@ public class AuthController {
     @Autowired
     private FirebaseAuthService firebaseAuthService;
 
+
+     @Autowired
+    private FirebaseAuthService firebaseAuthService;
+
+
     @GetMapping("/login")
     public String loginPage() {
         return "login"; // Render the login page
