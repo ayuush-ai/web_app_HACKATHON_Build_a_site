@@ -19,7 +19,9 @@ public class AuthController {
         return "login"; // Render the login page
     }
 @GetMapping("/signup")
-    public string jj
+    public string jjluife{
+    return "life"
+    }
 
     @GetMapping("/signup")
     public String signupPage() {
