@@ -55,6 +55,22 @@ public class BankController {
         return "redirect:/dashboard";
     }
 
+    @PostMapping("/register")
+    public String registerAccount(@RequestParam String username, @RequestParam String password, Model model) {
+        try {
+            accountService.registerAccount(username, password);
+            return "redirect:/login";
+        } catch (RuntimeException e) {
+            model.addAttribute("error", e.getMessage());
+            return "register";
+        }
+    }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+
     @PostMapping("/withdraw")
     public String withdraw(@RequestParam BigDecimal amount, Model model) {
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
