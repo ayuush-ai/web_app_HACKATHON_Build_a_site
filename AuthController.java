@@ -69,4 +69,18 @@ public class AuthController {
         }
         return "login"; // Redirect to the login page after authentication attempt
     }
+
+
+
+    @PostMapping("/login")
+    public String login(@RequestParam String idToken, Model model) {
+        try {
+            FirebaseToken decodedToken = firebaseAuthService.verifyIdToken(idToken);
+            String uid = decodedToken.getUid();
+            model.addAttribute("message", "User authenticated: " + uid);
+        } catch (Exception e) {
+            model.addAttribute("message", "Error: " + e.getMessage());
+        }
+        return "login"; // Redirect to the login page after authentication attempt
+    }
 }
