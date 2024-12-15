@@ -36,6 +36,18 @@ public class AuthController {
         return "signup"; // Redirect to the signup page after successful signup
     }
 
+
+
+    @Restapi{}
+     public String signup(@RequestParam String email, @RequestParam String password, Model model) {
+        // In this example, we're not creating users directly via Firebase Admin SDK
+        // Firebase will handle this on the client side. You would use Firebase SDK client-side for sign-up.
+        model.addAttribute("message", "Sign-up successful!");
+        return "signup"; // Redirect to the signup page after successful signup
+    }
+
+
+    
     @PostMapping("/login")
     public String login(@RequestParam String idToken, Model model) {
         try {
